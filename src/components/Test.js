@@ -184,7 +184,7 @@ function Test() {
   ));
 
   const cartProducts = () => (
-    <Flex w="100%" justifyContent="center" gap="4">
+    <Flex w="100%" bg="red" justifyContent="center" gap="4">
       {cart.map((item, i) => (
         <Flex flexDirection="column" key={item.name}>
           {/* <Text textAlign="center" my="2">
@@ -204,7 +204,7 @@ function Test() {
 
           {!item.inCart ? (
             <Stack my="2">
-              <Flex flexDirection="column" alignItems="center">
+              <Flex bg="green" flexDirection="column" alignItems="center">
                 <Text>Adults</Text>
                 <HStack>
                   <HStack>
